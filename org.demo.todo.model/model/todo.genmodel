@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.demo.todo.model/src" modelPluginID="org.demo.todo.model"
+    modelName="todo" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" operationReflection="true" importOrganizing="true" oSGiCompatible="true">
+  <foreignModel>todo.ecore</foreignModel>
+  <genPackages prefix="ToDoList" basePackage="org.demo" resource="XMI" disposableProviderFactory="true"
+      ecorePackage="todo.ecore#/">
+    <genClasses ecoreClass="todo.ecore#//TodoList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute todo.ecore#//TodoList/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute todo.ecore#//TodoList/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference todo.ecore#//TodoList/items"/>
+    </genClasses>
+    <genClasses ecoreClass="todo.ecore#//Item">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute todo.ecore#//Item/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute todo.ecore#//Item/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute todo.ecore#//Item/details"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
